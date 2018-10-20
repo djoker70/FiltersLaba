@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VorobyevFilterWork", "VorobyevFilterWork\VorobyevFilterWork.csproj", "{DACDEF6A-F3AC-40FA-96B0-65267F8E8497}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DACDEF6A-F3AC-40FA-96B0-65267F8E8497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACDEF6A-F3AC-40FA-96B0-65267F8E8497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACDEF6A-F3AC-40FA-96B0-65267F8E8497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACDEF6A-F3AC-40FA-96B0-65267F8E8497}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4020BFDA-B2A3-4BED-8019-F76E8D5B3CDA}
+	EndGlobalSection
+EndGlobal
