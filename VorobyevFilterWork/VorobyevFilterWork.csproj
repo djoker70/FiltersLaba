@@ -79,6 +79,7 @@
     <Compile Include="MatrixFilters\MotionBlurFilter.cs" />
     <Compile Include="PointFilters\LinearCorrection.cs" />
     <Compile Include="PointFilters\referenceСolorСorrection.cs" />
+    <Compile Include="PointFilters\SoltAndPepperFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MatrixFilters\PruittFilter.cs" />

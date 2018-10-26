@@ -305,22 +305,33 @@ namespace VorobyevFilterWork
 
         private void коррекцияСОпорнымЦветомToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Color destColor = new Color();
+            Color srcColor = new Color();
             Random rnd = new Random();
             int randomWidth = rnd.Next(0, image.Width);
             int randomHeight = rnd.Next(0, image.Height);
-            destColor = image.GetPixel(randomWidth, randomHeight);
+            srcColor = image.GetPixel(randomWidth, randomHeight);
             Bitmap tmpImg = new Bitmap(this.pictureBox2.Width, this.pictureBox2.Height);
             for (int i = 0; i < pictureBox2.Width; i++)
             {
                 for (int j = 0; j < pictureBox2.Height; j++)
                 {
-                    tmpImg.SetPixel(i, j, destColor);
+                    tmpImg.SetPixel(i, j, srcColor);
                 }
             }
             this.pictureBox2.Image = tmpImg;
             this.pictureBox2.Refresh();
-            referenceСolorСorrection filter = new referenceСolorСorrection(destColor);
+            referenceСolorСorrection filter = new referenceСolorСorrection(srcColor);
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void цветнойToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void сольИПерецToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SoltAndPepperFilter filter = new SoltAndPepperFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
     }
